@@ -1,6 +1,4 @@
-The Pivo
-/Users/albertgiloan/Desktop/finalpivo1/The Pivo/The Pivo/Views/News/NewsDetailView.swift
-/Users/albertgiloan/Desktop/finalpivo1/The Pivo/The Pivo/Views/News/NewsDetailView.swift:89:13 Argument 'date' must precede argument 'imageURL'
+
 # ThePivo - iOS-приложение для пивных ресторанов
 
 ThePivo - это мобильное приложение для iOS, которое помогает пользователям находить пивные рестораны, просматривать их меню, бронировать столики и следить за акциями и новостями.
