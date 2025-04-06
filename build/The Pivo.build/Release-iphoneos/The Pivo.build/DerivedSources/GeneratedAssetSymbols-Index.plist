@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/albertgiloan/Desktop/The Pivo/The Pivo/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLogo</string>
+			<key>relativePath</key>
+			<string>./Logo.imageset</string>
+			<key>swiftSymbol</key>
+			<string>logo</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/albertgiloan/Desktop/The Pivo/The Pivo/Preview Content/Preview Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNamePhoto2025030320151018NoBgHD2028CarvePhotos29</string>
+			<key>relativePath</key>
+			<string>./photo_2025-03-03%2015_10_18-no-bg-HD%20%28carve.photos%29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>photo2025030320151018NoBgHD2028CarvePhotos29</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

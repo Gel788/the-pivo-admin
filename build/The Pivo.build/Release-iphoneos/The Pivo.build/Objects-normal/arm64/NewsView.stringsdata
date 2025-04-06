@@ -1,0 +1,64 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/News/NewsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Новости и акции",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "Загрузка новостей...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет доступных новостей",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Показать все новости",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 106
+        }
+      },
+      {
+        "comment": "",
+        "key": "Действует до: %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ресторан",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Перейти к ресторану",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 251
+        }
+      }
+    ]
+  },
+  "version": 1
+}

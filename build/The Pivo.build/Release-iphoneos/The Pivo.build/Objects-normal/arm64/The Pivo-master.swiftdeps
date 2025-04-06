@@ -1,0 +1,40 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "7b665fe17628c11b9690df7bd5f038b0f87dad8400b9df62e9fe58af4aaf992f"
+build_start_time: [1741515035, 562450000]
+build_end_time: [1741515049, 255138000]
+inputs:
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/ContentView.swift": [1741450105, 858092058]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppModels.swift": [1741514918, 958652016]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppState.swift": [1741513733, 996785738]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppTypeAliases.swift": [1741513642, 351654508]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/CartModels.swift": [1741514420, 18828429]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Persistence.swift": [1741450107, 295317097]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Services/RestaurantService.swift": [1741451309, 757085005]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/The_PivoApp.swift": [1741513741, 388922995]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Utils/AppStyles.swift": [1741514690, 171407049]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Utils/ViewExtensions.swift": [1741452017, 202172837]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Auth/AuthView.swift": [1741513776, 202039023]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Cart/CartView.swift": [1741513810, 92079185]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/FilterButton.swift": [1741513277, 667701722]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/MenuItemCard.swift": [1741513324, 259281034]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/NewsCard.swift": [1741512007, 233457557]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/RestaurantCard.swift": [1741511962, 213407167]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/HomeView.swift": [1741513251, 598709495]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/MainTabView.swift": [1741512586, 680999489]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/News/NewsView.swift": [1741513265, 948616256]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Profile/ProfileView.swift": [1741513968, 739494681]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/EditReservationView.swift": [1741514928, 112640586]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationFormView.swift": [1741514816, 770687409]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationsView.swift": [1741514965, 490094687]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantDetailView.swift": [1741514205, 112722578]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantsListView.swift": [1741515020, 826067666]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/VideoPlayerView.swift": [1741513844, 166073875]
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/SplashView.swift": [1741510745, 177701083]
+  ? "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataClass.swift"
+  : [1741514735, 875224366]
+  ? "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataProperties.swift"
+  : [1741514735, 875754650]
+  ? "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/The_Pivo+CoreDataModel.swift"
+  : [1741514735, 872803356]
+  ? "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1741514735, 475147896]

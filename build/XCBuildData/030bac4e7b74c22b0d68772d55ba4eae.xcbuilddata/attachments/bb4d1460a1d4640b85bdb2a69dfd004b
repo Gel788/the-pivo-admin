@@ -1,0 +1,165 @@
+{
+  "" : {
+    "const-values" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master.swiftconstvalues",
+    "dependencies" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master.d",
+    "diagnostics" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master.dia",
+    "emit-module-dependencies" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master-emit-module.dia",
+    "swift-dependencies" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The Pivo-master.swiftdeps"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/ContentView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppModels.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppModels.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppModels.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppModels.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppState.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/AppTypeAliases.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppTypeAliases.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppTypeAliases.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppTypeAliases.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Models/CartModels.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartModels.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartModels.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartModels.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Persistence.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Persistence.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Persistence.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Persistence.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Services/RestaurantService.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantService.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantService.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantService.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/The_PivoApp.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_PivoApp.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_PivoApp.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_PivoApp.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Utils/AppStyles.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppStyles.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppStyles.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AppStyles.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Utils/ViewExtensions.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ViewExtensions.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ViewExtensions.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ViewExtensions.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Auth/AuthView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AuthView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AuthView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/AuthView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Cart/CartView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/CartView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/FilterButton.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/FilterButton.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/FilterButton.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/FilterButton.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/MenuItemCard.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MenuItemCard.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MenuItemCard.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MenuItemCard.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/NewsCard.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsCard.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsCard.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsCard.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/RestaurantCard.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantCard.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantCard.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantCard.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/HomeView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/MainTabView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/MainTabView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/News/NewsView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/NewsView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Profile/ProfileView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ProfileView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ProfileView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ProfileView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/EditReservationView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/EditReservationView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/EditReservationView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/EditReservationView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationFormView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationFormView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationFormView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationFormView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationsView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationsView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationsView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/ReservationsView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantDetailView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantDetailView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantDetailView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantDetailView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantsListView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantsListView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantsListView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/RestaurantsListView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/VideoPlayerView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/VideoPlayerView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/VideoPlayerView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/VideoPlayerView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/SplashView.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/SplashView.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/SplashView.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/SplashView.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataClass.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataClass.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataClass.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataClass.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataProperties.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataProperties.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataProperties.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/Item+CoreDataProperties.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/The_Pivo+CoreDataModel.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_Pivo+CoreDataModel.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_Pivo+CoreDataModel.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/The_Pivo+CoreDataModel.o"
+  },
+  "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/albertgiloan/Desktop/The Pivo/build/The Pivo.build/Release-iphoneos/The Pivo.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

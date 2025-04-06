@@ -1,0 +1,208 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Profile/ProfileView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Профиль",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Редактировать профиль",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Избранные рестораны",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Мои бронирования",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выйти из аккаунта",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "Вы используете приложение в гостевом режиме. Для полного доступа к функционалу необходимо авторизоваться.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Гостевой режим",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Войти или зарегистрироваться",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выйти из аккаунта",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 196
+        }
+      },
+      {
+        "comment": "",
+        "key": "Вы уверены, что хотите выйти?",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выйти",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отмена",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 201
+        }
+      },
+      {
+        "comment": "",
+        "key": "Редактирование профиля",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отмена",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 299
+        }
+      },
+      {
+        "comment": "",
+        "key": "Личная информация",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Имя",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "Телефон",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "Email",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "Сохранить изменения",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Информация",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "ОК",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 306
+        }
+      },
+      {
+        "comment": "",
+        "key": "Избранные рестораны",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 397
+        }
+      },
+      {
+        "comment": "",
+        "key": "У вас нет избранных ресторанов",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 363
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавьте рестораны в избранное, чтобы быстро находить их",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 367
+        }
+      },
+      {
+        "comment": "",
+        "key": "Перейти к ресторанам",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 373
+        }
+      }
+    ]
+  },
+  "version": 1
+}

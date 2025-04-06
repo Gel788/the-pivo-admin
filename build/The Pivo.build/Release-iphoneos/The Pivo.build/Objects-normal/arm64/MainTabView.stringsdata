@@ -1,0 +1,40 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/MainTabView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Главная",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Рестораны",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Бронирования",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Профиль",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 44
+        }
+      }
+    ]
+  },
+  "version": 1
+}

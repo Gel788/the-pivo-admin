@@ -1,0 +1,16 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/VideoPlayerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Назад",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 81
+        }
+      }
+    ]
+  },
+  "version": 1
+}

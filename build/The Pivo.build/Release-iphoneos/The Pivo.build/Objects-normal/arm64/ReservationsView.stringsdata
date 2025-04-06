@@ -1,0 +1,128 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Мои бронирования",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "Загрузка бронирований...",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Требуется авторизация",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "Чтобы видеть свои бронирования, необходимо войти в аккаунт",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Войти",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет бронирований",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет бронирований с выбранным статусом",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "Вы еще не бронировали столики. Выберите ресторан и забронируйте столик.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Показать все бронирования",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 183
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выбрать ресторан",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 201
+        }
+      },
+      {
+        "comment": "",
+        "key": "Особые пожелания: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 276
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нажмите для редактирования",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "Войти или зарегистрироваться",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 389
+        }
+      }
+    ]
+  },
+  "version": 1
+}

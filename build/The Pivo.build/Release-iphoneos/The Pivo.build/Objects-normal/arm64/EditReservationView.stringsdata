@@ -1,0 +1,264 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/EditReservationView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Ресторан не найден",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Редактирование брони",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Загрузка данных...",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Сохранить",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Успешно",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ошибка",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отмена бронирования",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Вы уверены, что хотите отменить бронирование? Это действие нельзя отменить.",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отменить бронирование",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "Вернуться к редактированию",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Статус: ",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Можно редактировать",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Дата и время",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Время",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "Дата",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "Количество гостей",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 250
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld × 250 ₽",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 286
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Особые пожелания",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 303
+        }
+      },
+      {
+        "comment": "",
+        "key": "Предварительный заказ блюд",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 321
+        }
+      },
+      {
+        "comment": "",
+        "key": "Меню недоступно",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выбранные блюда",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 349
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld шт. · %lld ₽",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 359
+        }
+      },
+      {
+        "comment": "",
+        "key": "Итого:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 374
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 380
+        }
+      },
+      {
+        "comment": "",
+        "key": "Сохранить изменения",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 395
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отменить бронирование",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 407
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 558
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 575
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавить",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 590
+        }
+      }
+    ]
+  },
+  "version": 1
+}

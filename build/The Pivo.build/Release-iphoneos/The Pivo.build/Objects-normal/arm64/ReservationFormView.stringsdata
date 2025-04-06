@@ -1,0 +1,224 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Reservations/ReservationFormView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавить",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 106
+        }
+      },
+      {
+        "comment": "",
+        "key": "Бронирование столика",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "Назад",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Далее",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 260
+        }
+      },
+      {
+        "comment": "",
+        "key": "Забронировать столик",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "Бронирование успешно",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ошибка",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выберите дату",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 309
+        }
+      },
+      {
+        "comment": "",
+        "key": "Дата",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 314
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выберите время",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 327
+        }
+      },
+      {
+        "comment": "",
+        "key": "Количество гостей",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 384
+        }
+      },
+      {
+        "comment": "",
+        "key": "Особые пожелания",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 411
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ваше бронирование",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 438
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 464
+        }
+      },
+      {
+        "comment": "",
+        "key": "Стандартный",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 471
+        }
+      },
+      {
+        "comment": "",
+        "key": "Меню недоступно",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 495
+        }
+      },
+      {
+        "comment": "",
+        "key": "Предварительный заказ блюд",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 483
+        }
+      },
+      {
+        "comment": "",
+        "key": "Необязательно",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 489
+        }
+      },
+      {
+        "comment": "",
+        "key": "Выбранные блюда",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 517
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld шт. · %lld ₽",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 525
+        }
+      },
+      {
+        "comment": "",
+        "key": "Итого:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 534
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 537
+        }
+      }
+    ]
+  },
+  "version": 1
+}

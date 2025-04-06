@@ -1,0 +1,88 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/MenuItemCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@%% ABV",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Фото недоступно",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавить",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Недоступно",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 276
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 240
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавить",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 267
+        }
+      }
+    ]
+  },
+  "version": 1
+}

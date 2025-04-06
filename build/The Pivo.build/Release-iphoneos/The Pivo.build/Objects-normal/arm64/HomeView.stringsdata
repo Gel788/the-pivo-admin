@@ -1,0 +1,128 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "The Pivo",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Загружаем самую свежую информацию...",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Не удалось загрузить данные",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Проверьте подключение к интернету и попробуйте снова",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Повторить",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добро пожаловать!",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "Откройте для себя лучшие пивные рестораны и события",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет доступных новостей",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 216
+        }
+      },
+      {
+        "comment": "",
+        "key": "Последние новости",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Все новости",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет доступных ресторанов",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 270
+        }
+      },
+      {
+        "comment": "",
+        "key": "Популярные рестораны",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 248
+        }
+      },
+      {
+        "comment": "",
+        "key": "Все рестораны",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "Специальные предложения",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "Подробнее",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 357
+        }
+      }
+    ]
+  },
+  "version": 1
+}

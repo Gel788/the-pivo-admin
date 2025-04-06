@@ -1,0 +1,24 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Components/RestaurantCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Фото недоступно",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld блюд в меню",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 123
+        }
+      }
+    ]
+  },
+  "version": 1
+}

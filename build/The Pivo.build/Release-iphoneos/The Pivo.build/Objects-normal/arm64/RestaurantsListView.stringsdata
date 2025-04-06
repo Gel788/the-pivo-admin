@@ -1,0 +1,120 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantsListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Рестораны",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Карта ресторанов",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Поиск ресторанов",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 163
+        }
+      },
+      {
+        "comment": "",
+        "key": "По рейтингу",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "По названию",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "По расстоянию",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "Фильтры",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "Загружаем список ресторанов...",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 254
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет результатов",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Попробуйте изменить поисковый запрос или очистить фильтры",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "Очистить поиск",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 285
+        }
+      },
+      {
+        "comment": "",
+        "key": "Рестораны не найдены",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Не удалось загрузить список ресторанов. Пожалуйста, попробуйте снова.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Обновить",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 312
+        }
+      }
+    ]
+  },
+  "version": 1
+}

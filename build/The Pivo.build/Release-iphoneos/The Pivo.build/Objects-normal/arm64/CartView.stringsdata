@@ -1,0 +1,240 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Cart/CartView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Корзина",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ваша корзина пуста",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Добавьте товары из меню ресторана",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Перейти к ресторанам",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Итого:",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Оформить заказ",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Очистить корзину",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Оформление заказа",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отмена",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 241
+        }
+      },
+      {
+        "comment": "",
+        "key": "Тип заказа",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Адрес доставки",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 199
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ваш заказ",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Комментарий к заказу",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 225
+        }
+      },
+      {
+        "comment": "",
+        "key": "Тип заказа",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "Доставка",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Самовывоз",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Введите адрес",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld x %lld ₽",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Итого",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "Комментарий (необязательно)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "Оформить заказ",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Заказ оформлен",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ваш заказ успешно оформлен. Ожидайте звонка оператора.",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "ОК",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 248
+        }
+      }
+    ]
+  },
+  "version": 1
+}

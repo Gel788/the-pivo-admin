@@ -1,0 +1,31 @@
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Models/AppModels.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Models/AppState.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Models/AppTypeAliases.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Models/CartModels.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Services/RestaurantService.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Utils/AppStyles.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Utils/ViewExtensions.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Auth/AuthView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Cart/CartView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Components/FilterButton.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Components/MenuItemCard.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Components/NewsCard.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Components/RestaurantCard.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/News/NewsView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Profile/ProfileView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Reservations/EditReservationView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Reservations/ReservationFormView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Reservations/ReservationsView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Restaurants/RestaurantDetailView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Restaurants/RestaurantsListView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/Restaurants/VideoPlayerView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/HomeView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/MainTabView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Views/SplashView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/ContentView.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/Persistence.swift
+/Users/albertgiloan/Desktop/The\ Pivo/The\ Pivo/The_PivoApp.swift
+/Users/albertgiloan/Desktop/The\ Pivo/build/The\ Pivo.build/Release-iphoneos/The\ Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataClass.swift
+/Users/albertgiloan/Desktop/The\ Pivo/build/The\ Pivo.build/Release-iphoneos/The\ Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/Item+CoreDataProperties.swift
+/Users/albertgiloan/Desktop/The\ Pivo/build/The\ Pivo.build/Release-iphoneos/The\ Pivo.build/DerivedSources/CoreDataGenerated/The_Pivo/The_Pivo+CoreDataModel.swift
+/Users/albertgiloan/Desktop/The\ Pivo/build/The\ Pivo.build/Release-iphoneos/The\ Pivo.build/DerivedSources/GeneratedAssetSymbols.swift

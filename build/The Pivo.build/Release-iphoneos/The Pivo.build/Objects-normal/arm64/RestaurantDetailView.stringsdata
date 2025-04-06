@@ -1,0 +1,120 @@
+{
+  "source": "/Users/albertgiloan/Desktop/The Pivo/The Pivo/Views/Restaurants/RestaurantDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Забронировать",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "В избранном",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "В избранное",
+        "location": {
+          "startingColumn": 79,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "Видео",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 157
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 183
+        }
+      },
+      {
+        "comment": "",
+        "key": "Меню",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 184
+        }
+      },
+      {
+        "comment": "",
+        "key": "Отзывы",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Акции",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "ABV: %@%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 392
+        }
+      },
+      {
+        "comment": "",
+        "key": "IBU: %lf",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 396
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ₽",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "Здесь будут отзывы посетителей",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 427
+        }
+      },
+      {
+        "comment": "",
+        "key": "Нет активных акций",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 442
+        }
+      },
+      {
+        "comment": "",
+        "key": "Действует до: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 526
+        }
+      }
+    ]
+  },
+  "version": 1
+}
