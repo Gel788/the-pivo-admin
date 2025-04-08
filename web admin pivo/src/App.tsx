@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Unauthorized from './pages/Unauthorized';
 import Layout from './components/Layout';
+import Restaurants from './pages/Restaurants';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,14 @@ const App: React.FC = () => {
               element={
                 <ProtectedRoute>
                   <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/restaurants"
+              element={
+                <ProtectedRoute>
+                  <Restaurants />
                 </ProtectedRoute>
               }
             />

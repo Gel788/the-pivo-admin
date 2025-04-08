@@ -3,49 +3,89 @@ import api from './api';
 export interface Restaurant {
   id: string;
   name: string;
+  description: string;
   address: string;
   phone: string;
   email: string;
+  workingHours: {
+    start: string;
+    end: string;
+  };
+  cuisine: string[];
+  rating: number;
   isActive: boolean;
+  images: string[];
   createdAt: string;
   updatedAt: string;
 }
 
-export interface CreateRestaurantData {
+export interface CreateRestaurantDto {
   name: string;
+  description: string;
   address: string;
   phone: string;
   email: string;
+  workingHours: {
+    start: string;
+    end: string;
+  };
+  cuisine: string[];
+  images?: string[];
 }
 
-export interface UpdateRestaurantData extends Partial<CreateRestaurantData> {
+export interface UpdateRestaurantDto extends Partial<CreateRestaurantDto> {
   isActive?: boolean;
 }
 
-const restaurantService = {
-  getAll: async (): Promise<Restaurant[]> => {
-    const response = await api.get<Restaurant[]>('/restaurants');
+class RestaurantService {
+  private readonly baseUrl = '/restaurants';
+
+  async getAll(): Promise<Restaurant[]> {
+    const response = await api.get<Restaurant[]>(this.baseUrl);
     return response.data;
-  },
+  }
 
-  getById: async (id: string): Promise<Restaurant> => {
-    const response = await api.get<Restaurant>(`/restaurants/${id}`);
+  async getById(id: string): Promise<Restaurant> {
+    const response = await api.get<Restaurant>(`${this.baseUrl}/${id}`);
     return response.data;
-  },
+  }
 
-  create: async (data: CreateRestaurantData): Promise<Restaurant> => {
-    const response = await api.post<Restaurant>('/restaurants', data);
+  async create(data: CreateRestaurantDto): Promise<Restaurant> {
+    const response = await api.post<Restaurant>(this.baseUrl, data);
     return response.data;
-  },
+  }
 
-  update: async (id: string, data: UpdateRestaurantData): Promise<Restaurant> => {
-    const response = await api.put<Restaurant>(`/restaurants/${id}`, data);
+  async update(id: string, data: UpdateRestaurantDto): Promise<Restaurant> {
+    const response = await api.patch<Restaurant>(`${this.baseUrl}/${id}`, data);
     return response.data;
-  },
+  }
 
-  delete: async (id: string): Promise<void> => {
-    await api.delete(`/restaurants/${id}`);
-  },
-};
+  async delete(id: string): Promise<void> {
+    await api.delete(`${this.baseUrl}/${id}`);
+  }
 
-export default restaurantService; 
+  async uploadImage(id: string, file: File): Promise<string> {
+    const formData = new FormData();
+    formData.append('image', file);
+    
+    const response = await api.post<{ url: string }>(
+      `${this.baseUrl}/${id}/images`,
+      formData,
+      {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      }
+    );
+    
+    return response.data.url;
+  }
+
+  async deleteImage(id: string, imageUrl: string): Promise<void> {
+    await api.delete(`${this.baseUrl}/${id}/images`, {
+      data: { imageUrl },
+    });
+  }
+}
+
+export const restaurantService = new RestaurantService(); 

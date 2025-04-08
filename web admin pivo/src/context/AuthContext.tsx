@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import api from '../services/api';
 
 interface User {
   id: string;
@@ -41,19 +42,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        // Здесь должен быть запрос к API для проверки токена
-        // const response = await api.get('/auth/me');
-        // setUser(response.data);
-        
-        // Временное решение для демонстрации
-        setUser({
-          id: '1',
-          email: 'admin@example.com',
-          name: 'Admin',
-          role: 'admin',
-        });
+        const response = await api.get('/auth/me');
+        setUser(response.data);
       }
     } catch (err) {
+      console.error('Auth check failed:', err);
       localStorage.removeItem('token');
     } finally {
       setLoading(false);
@@ -65,26 +58,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setLoading(true);
       setError(null);
       
-      // Здесь должен быть запрос к API для аутентификации
-      // const response = await api.post('/auth/login', { email, password });
-      // localStorage.setItem('token', response.data.token);
-      // setUser(response.data.user);
+      const response = await api.post('/auth/login', { email, password });
+      const { token, user: userData } = response.data;
       
-      // Временное решение для демонстрации
-      if (email === 'admin@example.com' && password === 'admin') {
-        localStorage.setItem('token', 'demo-token');
-        setUser({
-          id: '1',
-          email: 'admin@example.com',
-          name: 'Admin',
-          role: 'admin',
-        });
-        navigate('/');
-      } else {
-        throw new Error('Неверный email или пароль');
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Произошла ошибка при входе');
+      localStorage.setItem('token', token);
+      setUser(userData);
+      navigate('/');
+    } catch (err: any) {
+      const errorMessage = err.response?.data?.message || 'Произошла ошибка при входе';
+      setError(errorMessage);
+      throw new Error(errorMessage);
     } finally {
       setLoading(false);
     }
