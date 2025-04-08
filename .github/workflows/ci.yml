@@ -32,14 +32,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: 'web admin pivo/package-lock.json'
     
     - name: Install dependencies
+      working-directory: ./web admin pivo
       run: npm ci
     
     - name: Run linter
+      working-directory: ./web admin pivo
       run: npm run lint
     
     - name: Run tests
+      working-directory: ./web admin pivo
       run: npm test
       env:
         NODE_ENV: test
@@ -61,6 +65,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Run security audit
+      working-directory: ./web admin pivo
       run: npm audit
     
     - name: Run Snyk security scan
