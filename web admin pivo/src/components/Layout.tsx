@@ -18,29 +18,31 @@ import {
   Divider,
   Badge,
   Tooltip,
+  useTheme,
 } from '@mui/material';
 import {
   Menu as MenuIcon,
-  Dashboard,
-  Restaurant,
-  ShoppingCart,
-  People,
+  Dashboard as DashboardIcon,
+  Restaurant as RestaurantIcon,
+  ShoppingCart as OrderIcon,
+  People as PeopleIcon,
   Analytics,
   Event,
   AccountCircle,
   Logout,
   Notifications,
-  Settings,
+  Settings as SettingsIcon,
 } from '@mui/icons-material';
 import { useAuth } from '../context/AuthContext';
 
-const drawerWidth = 280;
+const drawerWidth = 240;
 
 const Layout: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [notificationAnchor, setNotificationAnchor] = useState<null | HTMLElement>(null);
   const { user, logout } = useAuth();
+  const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -70,83 +72,32 @@ const Layout: React.FC = () => {
   };
 
   const menuItems = [
-    { text: 'Дашборд', icon: <Dashboard />, path: '/' },
-    { text: 'Меню', icon: <Restaurant />, path: '/menu' },
-    { text: 'Заказы', icon: <ShoppingCart />, path: '/orders' },
-    { text: 'Рестораны', icon: <Restaurant />, path: '/restaurants' },
-    { text: 'Пользователи', icon: <People />, path: '/users' },
-    { text: 'Аналитика', icon: <Analytics />, path: '/analytics' },
-    { text: 'Бронирования', icon: <Event />, path: '/reservations' },
+    { text: 'Дашборд', icon: <DashboardIcon />, path: '/' },
+    { text: 'Рестораны', icon: <RestaurantIcon />, path: '/restaurants' },
+    { text: 'Пользователи', icon: <PeopleIcon />, path: '/users' },
+    { text: 'Заказы', icon: <OrderIcon />, path: '/orders' },
+    { text: 'Настройки', icon: <SettingsIcon />, path: '/settings' },
   ];
 
   const drawer = (
-    <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <Toolbar sx={{ p: 2 }}>
-        <Typography variant="h6" noWrap component="div" sx={{ color: '#FFFFFF' }}>
-          The Pivo Admin
-        </Typography>
-      </Toolbar>
-      <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }} />
-      <List sx={{ flexGrow: 1, px: 2 }}>
-        {menuItems.map((item) => {
-          const isActive = location.pathname === item.path;
-          return (
-            <ListItem
-              button
-              key={item.text}
-              onClick={() => navigate(item.path)}
-              sx={{
-                mb: 1,
-                backgroundColor: isActive ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-                '&:hover': {
-                  backgroundColor: isActive
-                    ? 'rgba(255, 255, 255, 0.15)'
-                    : 'rgba(255, 255, 255, 0.1)',
-                },
-              }}
-            >
-              <ListItemIcon sx={{ color: isActive ? '#FFFFFF' : 'rgba(255, 255, 255, 0.7)' }}>
-                {item.icon}
-              </ListItemIcon>
-              <ListItemText
-                primary={item.text}
-                sx={{
-                  '& .MuiListItemText-primary': {
-                    color: isActive ? '#FFFFFF' : 'rgba(255, 255, 255, 0.7)',
-                    fontWeight: isActive ? 600 : 400,
-                  },
-                }}
-              />
-            </ListItem>
-          );
-        })}
-      </List>
-      <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }} />
-      <Box sx={{ p: 2 }}>
-        <ListItem
-          button
-          onClick={() => navigate('/settings')}
-          sx={{
-            borderRadius: 1,
-            '&:hover': {
-              backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            },
-          }}
-        >
-          <ListItemIcon sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
-            <Settings />
-          </ListItemIcon>
-          <ListItemText
-            primary="Настройки"
-            sx={{
-              '& .MuiListItemText-primary': {
-                color: 'rgba(255, 255, 255, 0.7)',
-              },
+    <div>
+      <Toolbar />
+      <List>
+        {menuItems.map((item) => (
+          <ListItem
+            button
+            key={item.text}
+            onClick={() => {
+              navigate(item.path);
+              setMobileOpen(false);
             }}
-          />
-        </ListItem>
-      </Box>
-    </Box>
+          >
+            <ListItemIcon>{item.icon}</ListItemIcon>
+            <ListItemText primary={item.text} />
+          </ListItem>
+        ))}
+      </List>
+    </div>
   );
 
   return (
@@ -159,7 +110,7 @@ const Layout: React.FC = () => {
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -169,107 +120,15 @@ const Layout: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-
-          <Box sx={{ flexGrow: 1 }} />
-
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <Tooltip title="Уведомления">
-              <IconButton size="large" color="inherit" onClick={handleNotificationMenu}>
-                <Badge badgeContent={3} color="error">
-                  <Notifications />
-                </Badge>
-              </IconButton>
-            </Tooltip>
-
-            <Tooltip title="Профиль">
-              <IconButton
-                size="large"
-                onClick={handleMenu}
-                sx={{
-                  p: 0,
-                  '&:hover': {
-                    backgroundColor: 'rgba(0, 0, 0, 0.04)',
-                  },
-                }}
-              >
-                <Avatar
-                  sx={{
-                    width: 40,
-                    height: 40,
-                    bgcolor: 'secondary.main',
-                  }}
-                >
-                  {user?.name?.[0] || <AccountCircle />}
-                </Avatar>
-              </IconButton>
-            </Tooltip>
-          </Box>
-
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <Box sx={{ px: 2, py: 1 }}>
-              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                {user?.name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {user?.email}
-              </Typography>
-            </Box>
-            <Divider />
-            <MenuItem
-              onClick={() => {
-                handleClose();
-                navigate('/profile');
-              }}
-            >
-              Профиль
-            </MenuItem>
-            <MenuItem onClick={handleLogout}>
-              <ListItemIcon>
-                <Logout fontSize="small" />
-              </ListItemIcon>
-              Выйти
-            </MenuItem>
-          </Menu>
-
-          <Menu
-            anchorEl={notificationAnchor}
-            open={Boolean(notificationAnchor)}
-            onClose={handleNotificationClose}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'right',
-            }}
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-          >
-            <Typography sx={{ p: 2 }} variant="subtitle1">
-              Уведомления
-            </Typography>
-            <Divider />
-            <MenuItem onClick={handleNotificationClose}>Новый заказ #123</MenuItem>
-            <MenuItem onClick={handleNotificationClose}>Бронирование #456</MenuItem>
-            <MenuItem onClick={handleNotificationClose}>Отзыв от клиента</MenuItem>
-          </Menu>
+          <Typography variant="h6" noWrap component="div">
+            The Pivo Admin
+          </Typography>
         </Toolbar>
       </AppBar>
-
-      <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}>
+      <Box
+        component="nav"
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+      >
         <Drawer
           variant="temporary"
           open={mobileOpen}
@@ -278,7 +137,7 @@ const Layout: React.FC = () => {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'none', sm: 'block' },
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
@@ -301,15 +160,12 @@ const Layout: React.FC = () => {
           {drawer}
         </Drawer>
       </Box>
-
       <Box
         component="main"
         sx={{
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
-          backgroundColor: 'background.default',
-          minHeight: '100vh',
         }}
       >
         <Toolbar />
