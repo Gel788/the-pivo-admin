@@ -73,4 +73,65 @@ fastlane/test_output
 iOSInjectionProject/
 
 # macOS
-.DS_Store 
+.DS_Store
+
+# Зависимости
+node_modules/
+/.pnp
+.pnp.js
+
+# Тестирование
+/coverage
+
+# Продакшн
+/build
+/dist
+
+# Разное
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# iOS
+ios/Pods/
+ios/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcuserstate
+project.xcworkspace
+
+# Android
+android/app/build/
+android/build/
+android/local.properties
+android/.gradle
+android/.idea
+android/*.iml
+android/.settings
+android/.project
+android/app/release
+
+# Временные файлы
+*.log
+*.tmp
+*.temp
+.cache/ 
