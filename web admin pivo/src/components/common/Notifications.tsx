@@ -3,13 +3,12 @@ import {
   IconButton,
   Badge,
   Menu,
-  MenuItem,
-  Typography,
-  Box,
   List,
   ListItem,
   ListItemText,
-  ListItemAvatar,
+  ListItemIcon,
+  Typography,
+  Box,
   Avatar,
   Divider,
   Button,
@@ -88,7 +87,7 @@ const Notifications: React.FC = () => {
     },
   ]);
 
-  const unreadCount = notifications.filter(n => !n.read).length;
+  const unreadCount = notifications.filter((n) => !n.read).length;
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -99,23 +98,17 @@ const Notifications: React.FC = () => {
   };
 
   const handleMarkAsRead = (id: string) => {
-    setNotifications(notifications.map(n =>
-      n.id === id ? { ...n, read: true } : n
-    ));
+    setNotifications(notifications.map((n) => (n.id === id ? { ...n, read: true } : n)));
   };
 
   const handleMarkAllAsRead = () => {
-    setNotifications(notifications.map(n => ({ ...n, read: true })));
+    setNotifications(notifications.map((n) => ({ ...n, read: true })));
   };
 
   return (
     <>
       <Tooltip title="Уведомления">
-        <IconButton
-          size="large"
-          color="inherit"
-          onClick={handleClick}
-        >
+        <IconButton size="large" color="inherit" onClick={handleClick}>
           <Badge badgeContent={unreadCount} color="error">
             <NotificationsIcon />
           </Badge>
@@ -161,29 +154,23 @@ const Notifications: React.FC = () => {
                   }}
                   onClick={() => handleMarkAsRead(notification.id)}
                 >
-                  <ListItemAvatar>
+                  <ListItemIcon>
                     <Avatar sx={{ bgcolor: 'primary.main' }}>
                       {getNotificationIcon(notification.type)}
                     </Avatar>
-                  </ListItemAvatar>
+                  </ListItemIcon>
                   <ListItemText
                     primary={
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         {!notification.read && (
                           <CircleIcon sx={{ fontSize: 8, color: 'primary.main' }} />
                         )}
-                        <Typography variant="subtitle2">
-                          {notification.title}
-                        </Typography>
+                        <Typography variant="subtitle2">{notification.title}</Typography>
                       </Box>
                     }
                     secondary={
                       <>
-                        <Typography
-                          component="span"
-                          variant="body2"
-                          color="text.primary"
-                        >
+                        <Typography component="span" variant="body2" color="text.primary">
                           {notification.message}
                         </Typography>
                         <Typography
@@ -205,11 +192,7 @@ const Notifications: React.FC = () => {
             <ListItem>
               <ListItemText
                 primary={
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    align="center"
-                  >
+                  <Typography variant="body2" color="text.secondary" align="center">
                     Нет новых уведомлений
                   </Typography>
                 }
@@ -221,11 +204,7 @@ const Notifications: React.FC = () => {
           <>
             <Divider />
             <Box sx={{ p: 1 }}>
-              <Button
-                fullWidth
-                size="small"
-                onClick={handleClose}
-              >
+              <Button fullWidth size="small" onClick={handleClose}>
                 Показать все уведомления
               </Button>
             </Box>
@@ -236,4 +215,4 @@ const Notifications: React.FC = () => {
   );
 };
 
-export default Notifications; 
+export default Notifications;

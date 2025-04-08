@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   Box,
-  Button,
   IconButton,
   Tooltip,
   Collapse,
@@ -57,18 +56,12 @@ const FilterBar: React.FC<FilterBarProps> = ({
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           {showClearButton && onClear && (
             <Tooltip title="Очистить фильтры">
-              <IconButton
-                size="small"
-                onClick={handleClear}
-              >
+              <IconButton size="small" onClick={handleClear}>
                 <ClearIcon />
               </IconButton>
             </Tooltip>
           )}
-          <IconButton
-            size="small"
-            onClick={handleToggle}
-          >
+          <IconButton size="small" onClick={handleToggle}>
             {expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </IconButton>
         </Box>
@@ -85,4 +78,4 @@ const FilterBar: React.FC<FilterBarProps> = ({
   );
 };
 
-export default FilterBar; 
+export default FilterBar;

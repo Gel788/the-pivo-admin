@@ -41,19 +41,11 @@ const EmptyState: React.FC<EmptyStateProps> = ({
       <Typography variant="h6" gutterBottom>
         {title}
       </Typography>
-      <Typography
-        variant="body2"
-        color="text.secondary"
-        sx={{ mb: 3, maxWidth: 400 }}
-      >
+      <Typography variant="body2" color="text.secondary" sx={{ mb: 3, maxWidth: 400 }}>
         {description}
       </Typography>
       {action && (
-        <Button
-          variant="contained"
-          startIcon={<AddIcon />}
-          onClick={action.onClick}
-        >
+        <Button variant="contained" startIcon={<AddIcon />} onClick={action.onClick}>
           {action.label}
         </Button>
       )}
@@ -61,4 +53,4 @@ const EmptyState: React.FC<EmptyStateProps> = ({
   );
 };
 
-export default EmptyState; 
+export default EmptyState;

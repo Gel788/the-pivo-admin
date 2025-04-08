@@ -17,40 +17,32 @@ import {
   TextField,
   InputAdornment,
 } from '@mui/material';
-import {
-  Search as SearchIcon,
-  FilterList as FilterListIcon,
-} from '@mui/icons-material';
+import { Search as SearchIcon, FilterList as FilterListIcon } from '@mui/icons-material';
 
-interface Column {
-  id: string;
-  label: string;
-  minWidth?: number;
-  align?: 'right' | 'left' | 'center';
-  format?: (value: any) => string;
+interface Column<T> {
+  field: keyof T;
+  headerName: string;
+  width?: number;
+  renderCell?: (params: { value: T[keyof T]; row: T }) => React.ReactNode;
 }
 
-interface DataTableProps {
-  columns: Column[];
-  rows: any[];
+interface DataTableProps<T> {
+  columns: Column<T>[];
+  data: T[];
   loading?: boolean;
-  selectable?: boolean;
-  onRowSelect?: (selectedIds: string[]) => void;
-  actions?: React.ReactNode;
-  searchable?: boolean;
-  onSearch?: (query: string) => void;
+  onRowClick?: (row: T) => void;
+  onSort?: (field: keyof T) => void;
+  onFilter?: (filters: Record<string, string>) => void;
 }
 
-const DataTable: React.FC<DataTableProps> = ({
+const DataTable = <T extends Record<string, unknown>>({
   columns,
-  rows,
+  data,
   loading = false,
-  selectable = false,
-  onRowSelect,
-  actions,
-  searchable = false,
-  onSearch,
-}) => {
+  onRowClick,
+  onSort,
+  onFilter,
+}: DataTableProps<T>) => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [selected, setSelected] = useState<string[]>([]);
@@ -67,12 +59,10 @@ const DataTable: React.FC<DataTableProps> = ({
 
   const handleSelectAllClick = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.checked) {
-      const newSelected = rows.map((row) => row.id);
+      const newSelected = data.map((row) => row.id);
       setSelected(newSelected);
-      onRowSelect?.(newSelected);
     } else {
       setSelected([]);
-      onRowSelect?.([]);
     }
   };
 
@@ -89,27 +79,25 @@ const DataTable: React.FC<DataTableProps> = ({
     } else if (selectedIndex > 0) {
       newSelected = newSelected.concat(
         selected.slice(0, selectedIndex),
-        selected.slice(selectedIndex + 1),
+        selected.slice(selectedIndex + 1)
       );
     }
 
     setSelected(newSelected);
-    onRowSelect?.(newSelected);
   };
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const query = event.target.value;
     setSearchQuery(query);
-    onSearch?.(query);
   };
 
   const isSelected = (id: string) => selected.indexOf(id) !== -1;
 
   return (
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-      {(searchable || actions) && (
+      {(searchQuery || onFilter) && (
         <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          {searchable && (
+          {searchQuery && (
             <TextField
               size="small"
               placeholder="Поиск..."
@@ -125,9 +113,9 @@ const DataTable: React.FC<DataTableProps> = ({
               sx={{ width: 300 }}
             />
           )}
-          {actions && (
+          {onFilter && (
             <Box sx={{ display: 'flex', gap: 1 }}>
-              {actions}
+              {onFilter}
               <Tooltip title="Фильтр">
                 <IconButton>
                   <FilterListIcon />
@@ -137,70 +125,62 @@ const DataTable: React.FC<DataTableProps> = ({
           )}
         </Box>
       )}
-      
+
       <TableContainer sx={{ maxHeight: 440 }}>
-        {loading && (
-          <LinearProgress sx={{ position: 'absolute', width: '100%', top: 0 }} />
-        )}
+        {loading && <LinearProgress sx={{ position: 'absolute', width: '100%', top: 0 }} />}
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              {selectable && (
-                <TableCell padding="checkbox">
-                  <Checkbox
-                    indeterminate={selected.length > 0 && selected.length < rows.length}
-                    checked={rows.length > 0 && selected.length === rows.length}
-                    onChange={handleSelectAllClick}
-                  />
-                </TableCell>
-              )}
+              <TableCell padding="checkbox">
+                <Checkbox
+                  indeterminate={selected.length > 0 && selected.length < data.length}
+                  checked={data.length > 0 && selected.length === data.length}
+                  onChange={handleSelectAllClick}
+                />
+              </TableCell>
               {columns.map((column) => (
                 <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{ minWidth: column.minWidth }}
+                  key={column.field}
+                  align="left"
+                  style={{ minWidth: column.width }}
                   sx={{ fontWeight: 600 }}
                 >
-                  {column.label}
+                  {column.headerName}
                 </TableCell>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row) => {
-                const isItemSelected = isSelected(row.id);
-                return (
-                  <TableRow
-                    hover
-                    role="checkbox"
-                    aria-checked={isItemSelected}
-                    tabIndex={-1}
-                    key={row.id}
-                    selected={isItemSelected}
-                    onClick={selectable ? () => handleClick(row.id) : undefined}
-                    sx={{ cursor: selectable ? 'pointer' : 'default' }}
-                  >
-                    {selectable && (
-                      <TableCell padding="checkbox">
-                        <Checkbox checked={isItemSelected} />
+            {data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
+              const isItemSelected = isSelected(row.id);
+              return (
+                <TableRow
+                  hover
+                  role="checkbox"
+                  aria-checked={isItemSelected}
+                  tabIndex={-1}
+                  key={row.id}
+                  selected={isItemSelected}
+                  onClick={() => handleClick(row.id)}
+                  sx={{ cursor: 'pointer' }}
+                >
+                  <TableCell padding="checkbox">
+                    <Checkbox checked={isItemSelected} />
+                  </TableCell>
+                  {columns.map((column) => {
+                    const value = row[column.field];
+                    return (
+                      <TableCell key={column.field} align="left">
+                        {column.renderCell ? column.renderCell({ value, row }) : value}
                       </TableCell>
-                    )}
-                    {columns.map((column) => {
-                      const value = row[column.id];
-                      return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format ? column.format(value) : value}
-                        </TableCell>
-                      );
-                    })}
-                  </TableRow>
-                );
-              })}
-            {rows.length === 0 && !loading && (
+                    );
+                  })}
+                </TableRow>
+              );
+            })}
+            {data.length === 0 && !loading && (
               <TableRow>
-                <TableCell colSpan={columns.length + (selectable ? 1 : 0)} align="center">
+                <TableCell colSpan={columns.length + 1} align="center">
                   <Typography variant="body2" color="text.secondary">
                     Нет данных для отображения
                   </Typography>
@@ -219,12 +199,10 @@ const DataTable: React.FC<DataTableProps> = ({
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
         labelRowsPerPage="Строк на странице:"
-        labelDisplayedRows={({ from, to, count }) => 
-          `${from}-${to} из ${count}`
-        }
+        labelDisplayedRows={({ from, to, count }) => `${from}-${to} из ${count}`}
       />
     </Paper>
   );
 };
 
-export default DataTable; 
+export default DataTable;

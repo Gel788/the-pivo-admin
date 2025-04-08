@@ -99,14 +99,16 @@ const Layout: React.FC = () => {
                 mb: 1,
                 backgroundColor: isActive ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
                 '&:hover': {
-                  backgroundColor: isActive ? 'rgba(255, 255, 255, 0.15)' : 'rgba(255, 255, 255, 0.1)',
+                  backgroundColor: isActive
+                    ? 'rgba(255, 255, 255, 0.15)'
+                    : 'rgba(255, 255, 255, 0.1)',
                 },
               }}
             >
               <ListItemIcon sx={{ color: isActive ? '#FFFFFF' : 'rgba(255, 255, 255, 0.7)' }}>
                 {item.icon}
               </ListItemIcon>
-              <ListItemText 
+              <ListItemText
                 primary={item.text}
                 sx={{
                   '& .MuiListItemText-primary': {
@@ -134,7 +136,7 @@ const Layout: React.FC = () => {
           <ListItemIcon sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
             <Settings />
           </ListItemIcon>
-          <ListItemText 
+          <ListItemText
             primary="Настройки"
             sx={{
               '& .MuiListItemText-primary': {
@@ -167,22 +169,18 @@ const Layout: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-          
+
           <Box sx={{ flexGrow: 1 }} />
-          
+
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Tooltip title="Уведомления">
-              <IconButton
-                size="large"
-                color="inherit"
-                onClick={handleNotificationMenu}
-              >
+              <IconButton size="large" color="inherit" onClick={handleNotificationMenu}>
                 <Badge badgeContent={3} color="error">
                   <Notifications />
                 </Badge>
               </IconButton>
             </Tooltip>
-            
+
             <Tooltip title="Профиль">
               <IconButton
                 size="large"
@@ -231,7 +229,12 @@ const Layout: React.FC = () => {
               </Typography>
             </Box>
             <Divider />
-            <MenuItem onClick={() => { handleClose(); navigate('/profile'); }}>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                navigate('/profile');
+              }}
+            >
               Профиль
             </MenuItem>
             <MenuItem onClick={handleLogout}>
@@ -259,23 +262,14 @@ const Layout: React.FC = () => {
               Уведомления
             </Typography>
             <Divider />
-            <MenuItem onClick={handleNotificationClose}>
-              Новый заказ #123
-            </MenuItem>
-            <MenuItem onClick={handleNotificationClose}>
-              Бронирование #456
-            </MenuItem>
-            <MenuItem onClick={handleNotificationClose}>
-              Отзыв от клиента
-            </MenuItem>
+            <MenuItem onClick={handleNotificationClose}>Новый заказ #123</MenuItem>
+            <MenuItem onClick={handleNotificationClose}>Бронирование #456</MenuItem>
+            <MenuItem onClick={handleNotificationClose}>Отзыв от клиента</MenuItem>
           </Menu>
         </Toolbar>
       </AppBar>
-      
-      <Box
-        component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-      >
+
+      <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}>
         <Drawer
           variant="temporary"
           open={mobileOpen}
@@ -307,7 +301,7 @@ const Layout: React.FC = () => {
           {drawer}
         </Drawer>
       </Box>
-      
+
       <Box
         component="main"
         sx={{
@@ -325,4 +319,4 @@ const Layout: React.FC = () => {
   );
 };
 
-export default Layout; 
+export default Layout;

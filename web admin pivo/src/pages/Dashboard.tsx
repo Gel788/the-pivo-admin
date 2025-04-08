@@ -1,9 +1,8 @@
 import React from 'react';
 import {
-  Grid,
-  Paper,
-  Typography,
   Box,
+  Grid,
+  Typography,
   Card,
   CardContent,
   LinearProgress,
@@ -39,10 +38,10 @@ const Dashboard: React.FC = () => {
     ],
   };
 
-  const StatCard = ({ 
-    title, 
-    value, 
-    icon, 
+  const StatCard = ({
+    title,
+    value,
+    icon,
     color,
     growth,
   }: {
@@ -108,7 +107,11 @@ const Dashboard: React.FC = () => {
     </Card>
   );
 
-  const PopularItemCard = ({ item }: { item: { name: string; orders: number; progress: number } }) => (
+  const PopularItemCard = ({
+    item,
+  }: {
+    item: { name: string; orders: number; progress: number };
+  }) => (
     <Box sx={{ mb: 2 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
         <Typography variant="body1">{item.name}</Typography>
@@ -200,9 +203,7 @@ const Dashboard: React.FC = () => {
                   justifyContent: 'center',
                 }}
               >
-                <Typography color="text.secondary">
-                  График продаж будет добавлен позже
-                </Typography>
+                <Typography color="text.secondary">График продаж будет добавлен позже</Typography>
               </Box>
             </CardContent>
           </Card>
@@ -211,10 +212,15 @@ const Dashboard: React.FC = () => {
         <Grid item xs={12} md={4}>
           <Card sx={{ height: '100%' }}>
             <CardContent>
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-                <Typography variant="h6">
-                  Популярные позиции
-                </Typography>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  mb: 3,
+                }}
+              >
+                <Typography variant="h6">Популярные позиции</Typography>
                 <Tooltip title="Подробнее">
                   <IconButton size="small">
                     <MoreVert />
@@ -232,4 +238,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard; 
+export default Dashboard;

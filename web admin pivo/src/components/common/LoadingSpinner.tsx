@@ -24,11 +24,7 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
     >
       <CircularProgress size={size} />
       {text && (
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{ mt: 1 }}
-        >
+        <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
           {text}
         </Typography>
       )}
@@ -59,4 +55,4 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
   return content;
 };
 
-export default LoadingSpinner; 
+export default LoadingSpinner;

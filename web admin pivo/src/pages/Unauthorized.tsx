@@ -24,16 +24,10 @@ const Unauthorized: React.FC = () => {
           У вас нет необходимых прав для доступа к этой странице.
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
-          <Button
-            variant="contained"
-            onClick={() => navigate(-1)}
-          >
+          <Button variant="contained" onClick={() => navigate(-1)}>
             Назад
           </Button>
-          <Button
-            variant="outlined"
-            onClick={() => navigate('/')}
-          >
+          <Button variant="outlined" onClick={() => navigate('/')}>
             На главную
           </Button>
         </Box>
@@ -42,4 +36,4 @@ const Unauthorized: React.FC = () => {
   );
 };
 
-export default Unauthorized; 
+export default Unauthorized;

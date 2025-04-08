@@ -1,107 +1,96 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Container,
-  Paper,
-  TextField,
-  Button,
-  Typography,
   Box,
+  Button,
+  TextField,
+  Typography,
   Alert,
   CircularProgress,
+  Card,
+  CardContent,
 } from '@mui/material';
 import { useAuth } from '../context/AuthContext';
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
-  const { login, error, clearError, loading } = useAuth();
+  const { login } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     try {
       await login(email, password);
-    } catch (err) {
-      // Ошибка уже обработана в контексте
+      navigate('/dashboard');
+    } catch (error) {
+      setErrorMessage('Неверный email или пароль');
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <Container maxWidth="sm">
-      <Box
-        sx={{
-          marginTop: 8,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          minHeight: '100vh',
-        }}
-      >
-        <Paper
-          elevation={3}
-          sx={{
-            padding: 4,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            width: '100%',
-            borderRadius: 2,
-          }}
-        >
-          <Typography component="h1" variant="h5" sx={{ mb: 3 }}>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        minHeight: '100vh',
+        bgcolor: 'background.default',
+      }}
+    >
+      <Card sx={{ maxWidth: 400, width: '100%', mx: 2 }}>
+        <CardContent sx={{ p: 4 }}>
+          <Typography variant="h5" component="h1" align="center" gutterBottom>
             Вход в систему
           </Typography>
-          {error && (
-            <Alert severity="error" onClose={clearError} sx={{ mt: 2, width: '100%' }}>
-              {error}
+          {errorMessage && (
+            <Alert
+              severity="error"
+              onClose={() => setErrorMessage('')}
+              sx={{ mt: 2, width: '100%' }}
+            >
+              {errorMessage}
             </Alert>
           )}
-          <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1, width: '100%' }}>
+          <form onSubmit={handleSubmit}>
             <TextField
-              margin="normal"
-              required
               fullWidth
-              id="email"
               label="Email"
-              name="email"
-              autoComplete="email"
-              autoFocus
+              type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              disabled={loading}
-            />
-            <TextField
               margin="normal"
               required
+            />
+            <TextField
               fullWidth
-              name="password"
               label="Пароль"
               type="password"
-              id="password"
-              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              disabled={loading}
+              margin="normal"
+              required
             />
             <Button
-              type="submit"
               fullWidth
+              type="submit"
               variant="contained"
-              sx={{ mt: 3, mb: 2, height: 48 }}
+              size="large"
+              sx={{ mt: 3 }}
               disabled={loading}
             >
-              {loading ? (
-                <CircularProgress size={24} color="inherit" />
-              ) : (
-                'Войти'
-              )}
+              {loading ? <CircularProgress size={24} color="inherit" /> : 'Войти'}
             </Button>
-          </Box>
-        </Paper>
-      </Box>
-    </Container>
+          </form>
+        </CardContent>
+      </Card>
+    </Box>
   );
 };
 
-export default Login; 
+export default Login;

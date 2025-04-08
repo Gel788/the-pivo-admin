@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {
-  TextField,
-  InputAdornment,
-  IconButton,
-  Box,
-  CircularProgress,
-} from '@mui/material';
-import {
-  Search as SearchIcon,
-  Clear as ClearIcon,
-} from '@mui/icons-material';
+import { TextField, InputAdornment, IconButton, Box, CircularProgress } from '@mui/material';
+import { Search as SearchIcon, Clear as ClearIcon } from '@mui/icons-material';
 
 interface SearchInputProps {
   value: string;
@@ -70,11 +61,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
               {loading ? (
                 <CircularProgress size={20} />
               ) : inputValue ? (
-                <IconButton
-                  size="small"
-                  onClick={handleClear}
-                  edge="end"
-                >
+                <IconButton size="small" onClick={handleClear} edge="end">
                   <ClearIcon />
                 </IconButton>
               ) : null}
@@ -86,4 +73,4 @@ const SearchInput: React.FC<SearchInputProps> = ({
   );
 };
 
-export default SearchInput; 
+export default SearchInput;

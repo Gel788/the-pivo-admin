@@ -14,12 +14,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, requiredRole 
 
   if (loading) {
     return (
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
-      >
+      <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
         <CircularProgress />
       </Box>
     );
@@ -36,4 +31,4 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, requiredRole 
   return <>{children}</>;
 };
 
-export default ProtectedRoute; 
+export default ProtectedRoute;

@@ -65,11 +65,7 @@ class ErrorBoundary extends Component<Props, State> {
               </Box>
             )}
           </Typography>
-          <Button
-            variant="contained"
-            startIcon={<RefreshIcon />}
-            onClick={this.handleReset}
-          >
+          <Button variant="contained" startIcon={<RefreshIcon />} onClick={this.handleReset}>
             Попробовать снова
           </Button>
         </Box>
@@ -80,4 +76,4 @@ class ErrorBoundary extends Component<Props, State> {
   }
 }
 
-export default ErrorBoundary; 
+export default ErrorBoundary;

@@ -43,12 +43,7 @@ const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
   };
 
   return (
-    <Dialog
-      open={open}
-      onClose={onCancel}
-      maxWidth="xs"
-      fullWidth
-    >
+    <Dialog open={open} onClose={onCancel} maxWidth="xs" fullWidth>
       <DialogTitle sx={{ pb: 1 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <WarningIcon color={getColor()} />
@@ -62,12 +57,7 @@ const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
         <Button onClick={onCancel} color="inherit">
           {cancelText}
         </Button>
-        <Button
-          onClick={onConfirm}
-          variant="contained"
-          color={getColor()}
-          autoFocus
-        >
+        <Button onClick={onConfirm} variant="contained" color={getColor()} autoFocus>
           {confirmText}
         </Button>
       </DialogActions>
@@ -75,4 +65,4 @@ const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
   );
 };
 
-export default ConfirmDialog; 
+export default ConfirmDialog;

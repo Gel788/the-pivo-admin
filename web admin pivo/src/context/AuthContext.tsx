@@ -43,10 +43,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       setLoading(true);
       setError(null);
-      
+
       // Временная имитация API запроса
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       if (email === 'admin@example.com' && password === 'admin') {
         const user = {
           id: '1',
@@ -54,7 +54,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           name: 'Admin',
           role: 'admin',
         };
-        
+
         setUser(user);
         localStorage.setItem('token', 'demo-token');
         navigate('/');
@@ -100,4 +100,4 @@ export const useAuth = () => {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
-}; 
+};
