@@ -1,0 +1,9 @@
+[submodule "bekend"]
+	path = bekend
+	url = https://github.com/Gel788/the-pivo-backend.git
+	branch = main
+
+[submodule "web admin pivo"]
+	path = web admin pivo
+	url = https://github.com/Gel788/the-pivo-admin.git
+	branch = main

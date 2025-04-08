@@ -9,23 +9,9 @@ yarn-error.log*
 .env.local
 .env.*.local
 
-# Logs
-logs/
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Directory for uploaded files
-uploads/
-
-# Directory for backups
-backups/
-
-# Coverage directory used by tools like istanbul
+# Build
+dist/
+build/
 coverage/
 
 # IDE
@@ -38,15 +24,36 @@ coverage/
 .DS_Store
 Thumbs.db
 
-# Docker
-.docker/
-docker-compose.override.yml
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.npm/
+.eslintcache
 
 # Test
 coverage/
+reports/
 .nyc_output/
 
+# Redis
+dump.rdb
+*.rdb
+
 # Temporary files
-*.tmp
-*.temp
-.cache/ 
+tmp/
+temp/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for uploaded files
+uploads/
+
+# Directory for backups
+backups/ 
